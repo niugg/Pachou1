@@ -13,13 +13,11 @@ import pytesseract
 import urllib
 from PIL import Image
 
-p = re.compile(r'\d+')
 reload(sys)
 sys.setdefaultencoding('utf-8')
 options = webdriver.ChromeOptions()
 options.add_argument('disable-infobars')
 driver = webdriver.Chrome(chrome_options=options)
-####990990
 
 def getroomprice(text):
     dict = json.loads(text)
